@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<head>
+
+<!-- BOOTSTRAP STYLES-->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+<!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+<!-- GOOGLE FONTS-->
+ 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/dxc.jpg" style="width:60px;height:60px;"/>
+                    </a>
+                </div>
+              
+                 <span class="logout-spn" >
+                  <a href="#" style="color:#fff;">LOGOUT</a>  
+
+                </span>
+            </div>
+    </div>
+</div>
+
+<!-- class="navbar navbar-inverse navbar-fixed-top"> -->
+
+<div>
+
+<br>
+<center><h1 style="colour:white;"> CONTROL PLANE </h1></center>
+</br>
+
+</div>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+	<button ng-click="count = count +1">Click Button</button>
+
+	<p>{{ count }}</p>
+
+</div>
+
+<script>
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+	$scope.count = 0;
+
+});
+
+</script>
+
+</body>
+
+</html>
