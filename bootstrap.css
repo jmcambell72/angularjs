@@ -1,0 +1,43 @@
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+#para1 {
+	text-align: center;
+	color : red;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 1;
+    right: 2;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+.box {
+    height: 200px;
+    width: 50%;
+    background-color: grey;
+}
+.rcorners1 {
+    border-radius: 25px;
+    background: grey;
+    padding: 20px; 
+    width: 100px;gre
+    height: 100px;
+}
+ .frame1 {
+    height: 50px;
+    width: 100%;
+    background-color: grey;
+}
